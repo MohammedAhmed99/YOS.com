@@ -1,0 +1,113 @@
+body{
+
+
+}
+
+#t1 {
+
+font-size: 35px;
+}
+
+#t2 {
+
+font-size: 25px;
+border: groove 5px;
+
+width: 650px;
+}
+
+#t3 {
+  border: outset 5px;
+font-size: 20px;
+width: 200px;
+}
+
+
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}
+
+
+
+.container{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="radio"]{
+    display: none;
+}
+
+label{
+    display: block;
+    cursor: pointer;
+    font-weight: 20px;
+    margin-bottom: 10px;
+}
+
+label span{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px 10px 10px;
+    border-radius: 31px;
+    transition: .25s ease;
+}
+
+label span:hover,
+input[type="radio"]:checked + span{
+    background-color: #d6d6e5;
+}
+
+label span:before{
+    content: "";
+    background-color: #fff;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .25s ease;
+    box-shadow:  inset 0 0 0 2px #00005c;
+}
+
+input[type="radio"]:checked + span:before{
+    box-shadow: inset 0 0 0 10px #00005c;
+}
+
+
+
+
+
+
+
+
+/*button css*/
+.btn{
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    background:#00006c;
+    width: 150px;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: box-shadow, transform;
+    transition-property: box-shadow, transform;
+}
+.btn:hover, .btn:focus, .btn:active{
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+      
